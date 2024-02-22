@@ -1,0 +1,84 @@
+// Colemak US plus mappings for Right Shift.
+//
+// Right Shift is Level 5 shift. On Level 5, the cursor keys are mapped to
+// ESDF, Home/End/PageUp/PageDown are mapped to WRTG, and F13 through F24 are
+// mapped to F1 through F12.
+
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "colemak_rt" {
+
+    name[Group1]= "English (Colemak-ESDF)";
+    key.type[Group1] = "EIGHT_LEVEL";
+
+    key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,            cent,         sterling ] };
+    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,          endash,           emdash ] };
+    key <AE12> { [        equal,         plus,        multiply,         division ] };
+
+    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] };
+    key <AD02> { [            w,            W,           aring,            Aring, Home ] };
+    key <AD03> { [            f,            F,          atilde,           Atilde, Up ] };
+    key <AD04> { [            p,            P,          oslash,           Oslash, End ] };
+    key <AD05> { [            g,            G,     dead_ogonek,       asciitilde, Prior ] };
+    key <AD06> { [            j,            J,         dstroke,          Dstroke ] };
+    key <AD07> { [            l,            L,         lstroke,          Lstroke ] };
+    key <AD08> { [            u,            U,          uacute,           Uacute ] };
+    key <AD09> { [            y,            Y,      udiaeresis,       Udiaeresis ] };
+    key <AD10> { [    semicolon,        colon,      odiaeresis,       Odiaeresis ] };
+    key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
+
+    key <AC01> { [            a,            A,          aacute,           Aacute ] };
+    key <AC02> { [            r,            R,      dead_grave,       asciitilde, Left ] };
+    key <AC03> { [            s,            S,          ssharp,        0x1001e9e, Down ] };
+    key <AC04> { [            t,            T,      dead_acute, dead_doubleacute, Right ] };
+    key <AC05> { [            d,            D,  dead_diaeresis,       asciitilde, Next ] };
+    key <AC06> { [            h,            H,      dead_caron,       asciitilde ] };
+    key <AC07> { [            n,            N,          ntilde,           Ntilde ] };
+    key <AC08> { [            e,            E,          eacute,           Eacute ] };
+    key <AC09> { [            i,            I,          iacute,           Iacute ] };
+    key <AC10> { [            o,            O,          oacute,           Oacute ] };
+    key <AC11> { [   apostrophe,     quotedbl,          otilde,           Otilde ] };
+
+    key <AB01> { [            z,            Z,              ae,               AE ] };
+    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] };
+    key <AB03> { [            c,            C,        ccedilla,         Ccedilla ] };
+    key <AB04> { [            v,            V,              oe,               OE ] };
+    key <AB05> { [            b,            B,      dead_breve,       asciitilde ] };
+    key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] };
+    key <AB07> { [            m,            M,     dead_macron,       asciitilde ] };
+    key <AB08> { [        comma,         less,    dead_cedilla,       asciitilde ] };
+    key <AB09> { [       period,      greater,   dead_abovedot,       asciitilde ] };
+    key <AB10> { [        slash,     question,    questiondown,       asciitilde ] };
+
+    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
+    key <LSGT> { [        minus,   underscore,          endash,           emdash ] };
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+
+    key <FK01> { [ F1, F1, F1, F1, F13 ] };
+    key <FK02> { [ F2, F2, F2, F2, F14 ] };
+    key <FK03> { [ F3, F3, F3, F3, F15 ] };
+    key <FK04> { [ F4, F4, F4, F4, F16 ] };
+    key <FK05> { [ F5, F5, F5, F5, F17 ] };
+    key <FK06> { [ F6, F6, F6, F6, F18 ] };
+    key <FK07> { [ F7, F7, F7, F7, F19 ] };
+    key <FK08> { [ F8, F8, F8, F8, F20 ] };
+    key <FK09> { [ F9, F9, F9, F9, F21 ] };
+    key <FK10> { [ F10, F10, F10, F10, F22 ] };
+    key <FK11> { [ F11, F11, F11, F11, F23 ] };
+    key <FK12> { [ F12, F12, F12, F12, F24 ] };
+
+    key <RTSH> { [ ISO_Level5_Shift ], type[group1] = "EIGHT_LEVEL" };
+
+    include "level3(ralt_switch)"
+};
