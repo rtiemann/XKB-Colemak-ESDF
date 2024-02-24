@@ -29,7 +29,7 @@ Files:
   different on your machine.
 - `us.esdf`: The patched file containing my changes, also just for reference.
 - `us.patch`: The diff. To apply, run  
-  <code>$ sudo diff -i us.patch /usr/share/X11/xkb/symbols/us</code>
+  <code>sudo patch -i us.patch /usr/share/X11/xkb/symbols/us</code>
 - `us_esdf`: My layout in isolation the way I planned to add it if there was
   any sane way to accomplish this.
 
